@@ -2,12 +2,12 @@ import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
-        int clientOS = 0;
-                if (clientOS == 0) {
-                    System.out.println("Установите версию приложения для iOS по ссылке");
-                }
-                else if (clientOS ==1) {
-                    System.out.println("Установите версию приложения для Android по ссылке");
-                }
-    }
-}
+        int year = 2024;
+        boolean hiYear = (year % 4) == 0 || (year % 100) == 0;
+        if (hiYear) {
+            System.out.println("Год високосный");
+        } else {System.out.println("Год не високосный");
+        }
+        }
+        }
+
